@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+	<path d="M 50 90, 90 70, 90 60, 50 80, 50 90, 10 70, 10 60, 50 80, 50 80, 10 60, 50 40, 90 60, 50 80" stroke="#80c" fill="#111" stroke-linejoin="round"/>
+	<circle r="20" cx="50" cy="50" fill="#3E65DE"/>
+	<path d="M 50 80, 10 60, 10 30, 50 10, 90 30, 90 60" fill="white" opacity=".2"  stroke-linejoin="round"/>
+</svg>

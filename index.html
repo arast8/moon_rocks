@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<title>Moon Rocks (Andrew Rast CITW 160 Project)</title>
+	<style>
+		@import url(styles.css);
+		@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+		body {
+			grid-template-rows: auto 14em 1fr auto;
+			grid-template-areas:
+			"header header header"
+			"leftmoonimage moonimage rightmoonimage"
+			"leftmain main rightmain"
+			"footer footer footer";
+		}
+		#moon-image {
+			grid-area: moonimage;
+			background-image: url("images/moon_768x192.jpg");
+			background-position: bottom center;
+			background-size: 48em;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+		}
+		#moon-image p {
+			text-align: center;
+			font-weight: bold;
+			font-size: 1.5em;
+			margin: 2rem;
+			color: #111;
+		}
+		#content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			margin: 0;
+			width: 100%;
+			box-sizing: border-box;
+			height: 100%;
+		}
+		#content .sample-container {
+			margin: 0;
+		}
+		.sample-container {
+			display: block;
+			padding: 1em;
+			border-bottom: 1px solid #111;
+		}
+		#content h2 {
+			font-family: Verdana, Tahoma, sans-serif;
+			text-align: center;
+		}
+		.sample-container a {
+			color: #ddd;
+			text-align: center;
+			display: block;
+		}
+		.sample-container img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.sample-container a:hover, .sample-container a:active {
+			color: #ddd;
+			text-decoration: none;
+		}
+		.sample-container:hover {
+			border-bottom: 1px solid #96f;
+		}
+
+
+		@media screen  and (min-width: 42em){
+			#content {
+				flex-direction: row;
+			}
+		}
+		@media screen  and (min-width: 58em){
+			body {
+				grid-template-columns: 1fr 80% 1fr;
+			}
+			#content {
+				margin-bottom: 2em;
+				height: min-content;
+			}
+		}
+
+		@media screen and (min-width: 70em) {
+			body {
+				grid-template-columns: 1fr 60em 1fr;
+			}
+			#content {
+				width: 60rem;
+			}
+		}
+	</style>
+</head>
+
+<body id="body">
+	<header>
+		<div id="small-header">
+			<h1 id="logo"><a href="index.html">Moon <br>Rocks</a></h1>
+			<h2 id="menu-button">Menu&triangle;</h2>
+		</div>
+		<nav>
+			<ul id="menu-list">
+				<li class="menu-item"><a href="index.html">Home</a></li>
+				<li class="menu-item"><a href="details.html">Details</a></li>
+				<li class="menu-item"><a href="store.html">Store</a></li>
+				<li class="menu-item"><a href="about.html">About</a></li>
+				<li class="menu-item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="moon-image">
+		<p>We sell samples from other planets.</p>
+	</div>
+	<div id="content">
+		<div class="sample-container">
+			<a href="store.html#mars">
+				<h2>Mars</h2>
+				<img src="images/mars_sample.svg" alt="a graphic of what a mars sample might look like"/>
+			</a>
+		</div>
+		<div class="sample-container">
+			<a href="store.html#moon">
+				<h2>Earth's Moon</h2>
+				<img src="images/moon_sample.svg" alt="a graphic of what a moon sample might look like" />
+			</a>
+		</div>
+		<div class="sample-container">
+			<a href="store.html#saturn">
+				<h2>Saturn</h2>
+				<img src="images/saturn_sample.svg" alt="a graphic of what a saturn sample might look like" />
+			</a>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright &copy; 2020 Andrew Rast, <br>Except planet and moon photos by NASA, Audiowide font by Astigmatic</p>
+		<p><a href="../index.html">Exit Project</a></p>
+	</footer>
+	<script src="menu.js"></script>
+</body>
+
+</html>
